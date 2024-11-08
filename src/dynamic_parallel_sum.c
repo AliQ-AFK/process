@@ -63,7 +63,7 @@ int main()
             int sum = 0;
             for (start; start < end; start++)//calculates the sum
             {
-                sum += arr[j];
+                sum += arr[start];
             }
             write(fd[i][1], &sum, sizeof(sum));
             close(fd[i][1]);
