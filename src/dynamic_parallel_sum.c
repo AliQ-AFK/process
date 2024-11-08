@@ -34,7 +34,7 @@ int main()
     }
 
     int fd[n][2];//2d pipe
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)// n of processes == pipes
     {
         if (pipe(fd[i]) == -1)
         {
@@ -44,7 +44,7 @@ int main()
         }
     }
 
-    for (int i = 0; i < n; i++)//calclustion and forking is parallel = less overhead and simpler code
+    for (int i = 0; i < n; i++)//calclua tion and forking is parallel = less overhead and simpler code
     {
         //first loop for forking.
         int id = fork();
@@ -61,7 +61,7 @@ int main()
             int start = (i * arr_size) / n;
             int end = ((i + 1) * arr_size) / n;
             int sum = 0;
-            for (int j = start; j < end; j++)//calculates the sum
+            for (start; start < end; j++)//calculates the sum
             {
                 sum += arr[j];
             }
