@@ -61,7 +61,7 @@ int main()
             int start = (i * arr_size) / n;
             int end = ((i + 1) * arr_size) / n;
             int sum = 0;
-            for (start; start < end; j++)//calculates the sum
+            for (start; start < end; start++)//calculates the sum
             {
                 sum += arr[j];
             }
